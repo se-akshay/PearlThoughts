@@ -1,0 +1,3 @@
+# PearlThoughts
+
+Initial project setup.
