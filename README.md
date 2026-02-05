@@ -1,6 +1,7 @@
 # Doctor Appointment Booking System
 
 ## Overview
+
 A backend system for booking doctor appointments, managing patients, doctors, and specializations.
 
 ## ER Diagram – Doctor Appointment Booking System
@@ -62,3 +63,39 @@ erDiagram
         string status
         text notes
     }
+
+```
+
+## PostgreSQL Connection Setup
+
+### 1) Install dependencies
+
+```bash
+cd backend
+npm install
+```
+
+### 2) Configure environment variables
+
+Create a .env file in the backend folder (use .env.example as a template):
+
+```
+DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/DB_NAME
+```
+
+Example for local Postgres:
+
+```
+DATABASE_URL=postgres://postgres:postgres@localhost:5432/pearlthoughts
+```
+
+### 3) Start the server
+
+```bash
+cd backend
+npm run dev
+```
+
+### 4) Verify database connectivity
+
+Open http://localhost:3000/db-health to confirm the connection.
